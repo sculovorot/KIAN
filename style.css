@@ -474,26 +474,7 @@ img{
 	cursor: pointer;
 }
 
-/* //стили таблиц */
 
-.tables{
-	border-bottom:solid 1px #000000;
-	border-left:solid 1px #000000;
-	border-top:solid 1px #000000;
-	border-right:solid 1px #000000;
-}
-
-.tables-right {
-	border-bottom:solid 1px #000000;
-	border-left:solid 1px #000000;
-	border-top:solid 1px #000000;
-}
-
-.tables-left {
-	border-bottom:solid 1px #000000;
-	border-right:solid 1px #000000;
-	border-top:solid 1px #000000;
-}
 
 .footer{
 	width:100%;

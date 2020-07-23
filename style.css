@@ -398,6 +398,8 @@ span.sim_dot{
 .menu_button:hover{
 	cursor: pointer;
 	background-color: rgba(78, 181, 199);
+	height: 50px;
+	font-size: 40px;
 }
 .date{
 	font-weight: bold;
@@ -432,7 +434,7 @@ span.sim_dot{
 }
 
 .menu_block2:hover{
-	background-color: rgba(78, 181, 199);
+	/* 	background-color: rgba(78, 181, 199); */
 	cursor: pointer;
 }
 

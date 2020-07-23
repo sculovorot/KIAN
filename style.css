@@ -257,11 +257,24 @@ span.sim_dot{
 	display: block;
   }
 
+.hide1 {
+	display: none !important;
+  }
+
+.show1 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: block;
+  }
+
 .site_content{
 	width: 880px;
 	overflow: hidden;
 	min-height: 600px;	
+	/* border: solid 1px black; */
 }
+
 
 .sitebar_container{
 	float:right;
@@ -339,6 +352,7 @@ span.sim_dot{
 	border-radius: 5%;
 	margin-top: 50px;
 	display: table;
+
 }
 
 .menu_block1 h2{
@@ -351,6 +365,40 @@ span.sim_dot{
 	vertical-align: middle;
 }
 
+.block_content{
+	width: 75%;
+	height: 100%;
+	float: left;
+	margin-left: 10px;
+	border: solid 1px black;
+	padding-left: 40px;
+	padding-bottom: 40px;
+}
+
+.menu_block4{
+	width: 20%;
+	height: 100%;
+	
+	float: left;
+}
+
+.menu_button{
+	width: 100%;
+	height: 35px;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 30px;
+	border: solid 1px black;
+	border-radius: 5px;
+	background-color: rgba(78, 181, 199, 0.7);
+	box-shadow: inset 0 0 10px 10px  rgb(78, 181, 199);
+	
+}
+
+.menu_button:hover{
+	cursor: pointer;
+	background-color: rgba(78, 181, 199);
+}
 .date{
 	font-weight: bold;
 }
@@ -360,7 +408,7 @@ span.sim_dot{
 }
 	
 .menu_block2{
-	float:left;
+	/* float:left; */
 	height: 150px;
 	width: 150px;
 	background-color: rgba(78, 181, 199, 0.7);

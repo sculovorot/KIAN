@@ -3,17 +3,21 @@
     let tab = document.querySelectorAll('.info-header-tab'),
         info = document.querySelector('.info-header'),
         tabContent = document.querySelectorAll('.site_content'),
+        tabContentTabs = document.querySelectorAll('.block_content'),
         zag = document.querySelector('.vps'),
         text = [
-            'Главная',
-            'ККТ и оборудование',
-            'Обслуживание',
+            'Центр IT-решений',
+            'Продукты',
+            'Услуги',
             'Монтаж СКС',
             'Контакты'
         ],
         ikon = document.querySelector('.site_content'),
         tabIkon = document.querySelectorAll('.click-me'),
-        tabIkonTabs = document.querySelectorAll('.click-me-tab');
+        tabIkonTabs = document.querySelectorAll('.menu_button');
+
+        console.log(tabIkonTabs);
+        console.log(tabContentTabs)
           
     function hideTabContent(a = 1) {
          for (let i = a; i < tabContent.length; i++) {
@@ -23,10 +27,34 @@
      }
     hideTabContent();
 
+    function hideTabContent1(d = 1) {
+        for (let i = d; i < tabContentTabs.length; i++) {
+            tabContentTabs[i].classList.remove('show');
+           tabContentTabs[i].classList.add('hide');
+        }
+    }
+   hideTabContent1();
+
+    function hideTabContent1(d = 1) {
+        for (let i = d; i < tabContentTabs.length; i++) {
+            tabContentTabs[i].classList.remove('show1');
+           tabContentTabs[i].classList.add('hide1');
+        }
+    }
+   hideTabContent1();
+
+
     function showTabContent(b) {
         if (tabContent[b].classList.contains('hide')) {
             tabContent[b].classList.remove('hide');
             tabContent[b].classList.add('show');
+        }
+    }
+
+    function showTabContent1(d) {
+        if (tabContentTabs[d].classList.contains('hide1')) {
+            tabContentTabs[d].classList.remove('hide1');
+            tabContentTabs[d].classList.add('show1');
         }
     }
   
@@ -67,16 +95,16 @@
         }            
     });
     
-    let ikonShow = document.querySelector('.site_contaner');
+    let ikonShow = document.querySelector('.menu_block4');
 
     ikonShow.addEventListener('click', function(event) {
         let target = event.target;
             
-        if (target && target.classList.contains('click-me-tab')){
+        if (target && target.classList.contains('menu_button')){
             for (i=0; i<tabIkonTabs.length; i++) {
                 if (target == tabIkonTabs[i]) {
-                    hideTabContent(0);
-                    showTabContent(i+5);
+                    hideTabContent1(0);
+                    showTabContent1(i);
                     break;
                 }
             }
